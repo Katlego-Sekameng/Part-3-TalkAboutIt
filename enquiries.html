@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiries | Ask About Session Costs and Availability - TalkAboutIt</title>
+
+<link rel="stylesheet" href="css_assets/style.css">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"TalkAboutIt","url":"https://YOUR-USERNAME.github.io/talkaboutit/","email":"sekamengkatlego@gmail.com","description":"Online platform connecting people with affordable mental health professionals in South Africa.","address":{"@type":"PostalAddress","addressLocality":"Rosebank, Johannesburg","addressCountry":"ZA"}}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="header">
+<nav class="navbar" aria-label="Main navigation"><div class="nav-container">
+<h1 class="logo"><a href="index.html">TalkAboutIt</a></h1>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">&#9776;</button>
+<ul class="nav-menu" id="nav-menu"><li><a href="index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li><li><a href="services.html" class="nav-link">Services</a></li><li><a href="enquiries.html" class="nav-link active">Enquiries</a></li><li><a href="contact.html" class="nav-link">Contact</a></li></ul>
+</div></nav>
+</header>
+<main class="main-content" id="main">
+<section class="enquiry-section"><div class="container fade-in"><h2>Send Us an Enquiry</h2><p>Tell us what you need and we will show you the cost and availability straight away.</p><form class="enquiry-form" id="enquiry-form" action="data/professionals.json" method="get" novalidate><div class="form-group"><label for="fullname">Full Name</label><input type="text" id="fullname" name="fullname" required minlength="2" maxlength="60" pattern="[A-Za-z\u00C0-\u017F' \-]{2,60}" autocomplete="name" placeholder="Enter your full name"><span class="error" id="fullname-err" role="alert"></span></div><div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" required autocomplete="email" placeholder="your@email.com"><span class="error" id="email-err" role="alert"></span></div><div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required pattern="(\+27|0)[0-9]{9}" autocomplete="tel" placeholder="e.g. 0821234567 or +27821234567"><span class="error" id="phone-err" role="alert"></span></div><div class="form-group"><label for="etype">Enquiry type</label><select id="etype" name="etype" required><option value="">Select...</option><option value="session">Book a session (cost and availability)</option><option value="pricing">General pricing</option><option value="professional">Become a professional</option></select><span class="error" id="etype-err" role="alert"></span></div><div class="form-group" id="specialty-group"><label for="specialty">Support needed</label><select id="specialty" name="specialty"><option value="">Select...</option><option>Depression</option><option>Anxiety</option><option>Stress</option><option>Loneliness</option></select><span class="error" id="specialty-err" role="alert"></span></div><div class="form-group"><label for="date">Preferred date</label><input type="date" id="date" name="date" required><span class="error" id="date-err" role="alert"></span></div><div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" required minlength="20" maxlength="500" placeholder="Please give details (20 to 500 characters)"></textarea><small id="msg-count">0/500</small><span class="error" id="message-err" role="alert"></span></div><div class="form-group check"><input type="checkbox" id="consent" name="consent" required><label for="consent">I agree that TalkAboutIt may use my details to reply to this enquiry.</label><span class="error" id="consent-err" role="alert"></span></div><button type="submit" class="btn-submit">Send Enquiry</button></form><div id="enquiry-result" class="result" aria-live="polite" hidden></div></div></section>
+</main>
+<dialog id="how-dialog" class="dialog"><h3>How TalkAboutIt works</h3><ol><li>Browse professionals on the <a href="services.html">Services</a> page.</li><li>Send an <a href="enquiries.html">enquiry</a> to see cost and availability.</li><li>Book a session and talk from anywhere.</li></ol><button type="button" class="btn-submit" data-close>Close</button></dialog>
+<footer class="footer"><div class="container">
+<p>&copy; <span id="year">2026</span> TalkAboutIt. All rights reserved.</p>
+<p>Your mental health is our priority.</p>
+</div></footer>
+<script src="js/main.js" defer></script>
+
+</body>
+</html>

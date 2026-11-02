@@ -1,0 +1,10 @@
+[
+ {"id":1,"name":"Thandi Mokoena","title":"Registered Counsellor","specialty":"Depression","rate":180,"days":["Mon","Wed","Fri"],"experience":"3 years","language":"English, Sesotho"},
+ {"id":2,"name":"Pieter van Wyk","title":"Psychology Honours Graduate","specialty":"Stress","rate":120,"days":["Tue","Thu","Sat"],"experience":"1 year","language":"English, Afrikaans"},
+ {"id":3,"name":"Naledi Dlamini","title":"Clinical Psychologist","specialty":"Anxiety","rate":350,"days":["Mon","Tue","Thu"],"experience":"8 years","language":"English, isiZulu"},
+ {"id":4,"name":"Sipho Nkosi","title":"Registered Counsellor","specialty":"Loneliness","rate":150,"days":["Wed","Fri","Sun"],"experience":"2 years","language":"English, isiZulu"},
+ {"id":5,"name":"Aisha Patel","title":"Counselling Psychologist","specialty":"Anxiety","rate":280,"days":["Tue","Wed","Sat"],"experience":"5 years","language":"English, Gujarati"},
+ {"id":6,"name":"Lerato Khumalo","title":"Psychology Intern","specialty":"Loneliness","rate":90,"days":["Mon","Thu","Fri"],"experience":"6 months","language":"English, Setswana"},
+ {"id":7,"name":"Johan Botha","title":"Counselling Psychologist","specialty":"Depression","rate":300,"days":["Mon","Tue","Wed"],"experience":"6 years","language":"English, Afrikaans"},
+ {"id":8,"name":"Zanele Mthembu","title":"Psychology Honours Graduate","specialty":"Stress","rate":110,"days":["Thu","Fri","Sat"],"experience":"1 year","language":"English, isiXhosa"}
+]

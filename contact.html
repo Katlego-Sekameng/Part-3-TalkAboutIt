@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact TalkAboutIt | Email, Message Form and Location</title>
+
+<link rel="stylesheet" href="css_assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"TalkAboutIt","url":"https://YOUR-USERNAME.github.io/talkaboutit/","email":"sekamengkatlego@gmail.com","description":"Online platform connecting people with affordable mental health professionals in South Africa.","address":{"@type":"PostalAddress","addressLocality":"Rosebank, Johannesburg","addressCountry":"ZA"}}</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="header">
+<nav class="navbar" aria-label="Main navigation"><div class="nav-container">
+<h1 class="logo"><a href="index.html">TalkAboutIt</a></h1>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">&#9776;</button>
+<ul class="nav-menu" id="nav-menu"><li><a href="index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li><li><a href="services.html" class="nav-link">Services</a></li><li><a href="enquiries.html" class="nav-link">Enquiries</a></li><li><a href="contact.html" class="nav-link active">Contact</a></li></ul>
+</div></nav>
+</header>
+<main class="main-content" id="main">
+<section class="contact-section"><div class="container fade-in"><h2>Contact Us</h2><p>We'd love to hear from you. Send a message below or use the details provided.</p><div class="contact-info"><article class="contact-method"><h3>Email</h3><p>For general inquiries and support:</p><a href="mailto:sekamengkatlego@gmail.com" class="contact-link">sekamengkatlego@gmail.com</a></article><article class="contact-method"><h3>Response Time</h3><p>We aim to respond within 24-48 business hours.</p></article><article class="contact-method"><h3>Location</h3><p>Rosebank, Johannesburg, South Africa.</p></article></div><h2>Send a message</h2><form class="enquiry-form" id="contact-form" action="mailto:sekamengkatlego@gmail.com" method="post" novalidate><div class="form-group"><label for="cname">Your name</label><input type="text" id="cname" name="cname" required minlength="2" maxlength="60" autocomplete="name"><span class="error" id="cname-err" role="alert"></span></div><div class="form-group"><label for="cemail">Your email</label><input type="email" id="cemail" name="cemail" required autocomplete="email"><span class="error" id="cemail-err" role="alert"></span></div><div class="form-group"><label for="cphone">Phone (optional)</label><input type="tel" id="cphone" name="cphone" pattern="(\+27|0)[0-9]{9}" autocomplete="tel" placeholder="0821234567"><span class="error" id="cphone-err" role="alert"></span></div><div class="form-group"><label for="ctype">Type of message</label><select id="ctype" name="ctype" required><option value="">Select...</option><option>General question</option><option>Feedback</option><option>Partnership</option><option>Technical problem</option></select><span class="error" id="ctype-err" role="alert"></span></div><div class="form-group"><label for="cmessage">Message</label><textarea id="cmessage" name="cmessage" rows="6" required minlength="20" maxlength="1000"></textarea><span class="error" id="cmessage-err" role="alert"></span></div><button type="submit" class="btn-submit">Prepare email</button></form><div id="contact-result" class="result" aria-live="polite" hidden></div><h2>Find us</h2><div id="map" role="region" aria-label="Map showing TalkAboutIt location in Rosebank, Johannesburg"></div></div></section>
+</main>
+<dialog id="how-dialog" class="dialog"><h3>How TalkAboutIt works</h3><ol><li>Browse professionals on the <a href="services.html">Services</a> page.</li><li>Send an <a href="enquiries.html">enquiry</a> to see cost and availability.</li><li>Book a session and talk from anywhere.</li></ol><button type="button" class="btn-submit" data-close>Close</button></dialog>
+<footer class="footer"><div class="container">
+<p>&copy; <span id="year">2026</span> TalkAboutIt. All rights reserved.</p>
+<p>Your mental health is our priority.</p>
+
+</div></footer>
+<script src="js/main.js" defer></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+</body>
+</html>
